@@ -1,0 +1,37 @@
+{
+  "created_at_utc": "2026-10-04T14:53:07.129973+00:00",
+  "cpu": "Apple M4",
+  "logical_cpu_count": 10,
+  "os": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "architecture": "arm64",
+  "compiler": "c++",
+  "compiler_version": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+  "flags": "-O2 -std=c++17 -Wall -Wextra -Wpedantic",
+  "python": "3.14.3 (v3.14.3:323c59a5e34, Feb  3 2026, 11:41:37) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "numpy": "2.4.3",
+  "binary": "lab1",
+  "binary_sha256": "83f77facf21d15cde95749c3b30f24b578da1e7a83b2d3672a14b45469ed89ef",
+  "sizes": [
+    100,
+    200,
+    400,
+    800,
+    1200,
+    1600,
+    2000
+  ],
+  "repeats": 5,
+  "warmups_per_size": 1,
+  "seed": 42,
+  "matrix_generation": "numpy.default_rng(seed).uniform(-10, 10); A then B",
+  "timing_scope": "C++ matrix multiplication only, as reported by the executable",
+  "standard_deviation": "population",
+  "rtol": 1e-09,
+  "atol": 1e-09,
+  "numpy_thread_environment": {
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null,
+    "VECLIB_MAXIMUM_THREADS": null
+  }
+}

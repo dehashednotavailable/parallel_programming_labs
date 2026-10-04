@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+Lab*/lab1
+Lab*/lab1.exe
+Lab*/build/
+Lab*/generated/
+Lab*/data/C.txt
