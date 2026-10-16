@@ -1,0 +1,49 @@
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+rm -f matrix_cuda matrix_cuda.exe data/C.txt
+nvcc -O2 -arch=sm_20 main.cu -o matrix_cuda
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+n=200, tile=4: median=0.001090592s, matches_baseline=True
+n=200, tile=8: median=0.000276288s, matches_baseline=True
+n=200, tile=16: median=0.000245408s, matches_baseline=True
+n=200, tile=32: median=0.000287072s, matches_baseline=True
+n=400, tile=4: median=0.009417184s, matches_baseline=True
+n=400, tile=8: median=0.0020848s, matches_baseline=True
+n=400, tile=16: median=0.001397248s, matches_baseline=True
+n=400, tile=32: median=0.001659104s, matches_baseline=True
+n=800, tile=4: median=0.0777192s, matches_baseline=True
+n=800, tile=8: median=0.016512608s, matches_baseline=True
+n=800, tile=16: median=0.010911008s, matches_baseline=True
+n=800, tile=32: median=0.011272576s, matches_baseline=True
+n=1200, tile=4: median=0.261406403s, matches_baseline=True
+n=1200, tile=8: median=0.055749729s, matches_baseline=True
+n=1200, tile=16: median=0.036650337s, matches_baseline=True
+n=1200, tile=32: median=0.038951614s, matches_baseline=True
+n=1600, tile=4: median=0.61994281s, matches_baseline=True
+n=1600, tile=8: median=0.132465286s, matches_baseline=True
+n=1600, tile=16: median=0.08688736s, matches_baseline=True
+n=1600, tile=32: median=0.089181793s, matches_baseline=True
+n=2000, tile=4: median=1.21084534s, matches_baseline=True
+n=2000, tile=8: median=0.259272369s, matches_baseline=True
+n=2000, tile=16: median=0.16967897s, matches_baseline=True
+n=2000, tile=32: median=0.176737213s, matches_baseline=True
+Results saved to results/sergey-korolev

@@ -1,0 +1,28 @@
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+n=200, configuration=1: median=0.00863385s, matches_baseline=True
+n=200, configuration=2: median=0.00458598s, matches_baseline=True
+n=200, configuration=4: median=0.00250697s, matches_baseline=True
+n=200, configuration=8: median=0.00167012s, matches_baseline=True
+n=400, configuration=1: median=0.0681379s, matches_baseline=True
+n=400, configuration=2: median=0.0354631s, matches_baseline=True
+n=400, configuration=4: median=0.0180469s, matches_baseline=True
+n=400, configuration=8: median=0.0103481s, matches_baseline=True
+n=800, configuration=1: median=0.540028s, matches_baseline=True
+n=800, configuration=2: median=0.274231s, matches_baseline=True
+n=800, configuration=4: median=0.144217s, matches_baseline=True
+n=800, configuration=8: median=0.119787s, matches_baseline=True
+n=1200, configuration=1: median=1.79399s, matches_baseline=True
+n=1200, configuration=2: median=0.957925s, matches_baseline=True
+n=1200, configuration=4: median=0.568777s, matches_baseline=True
+n=1200, configuration=8: median=0.412123s, matches_baseline=True
+n=1600, configuration=1: median=4.65251s, matches_baseline=True
+n=1600, configuration=2: median=2.39048s, matches_baseline=True
+n=1600, configuration=4: median=1.35139s, matches_baseline=True
+n=1600, configuration=8: median=0.976325s, matches_baseline=True
+n=2000, configuration=1: median=8.96777s, matches_baseline=True
+n=2000, configuration=2: median=4.51949s, matches_baseline=True
+n=2000, configuration=4: median=2.71501s, matches_baseline=True
+n=2000, configuration=8: median=1.88916s, matches_baseline=True
+/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+Results saved to results/sergey-korolev

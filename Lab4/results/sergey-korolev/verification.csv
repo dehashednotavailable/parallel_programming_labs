@@ -1,0 +1,7 @@
+size,accuracy_max_abs,passed
+200,0.0,True
+400,0.0,True
+800,0.0,True
+1200,0.0,True
+1600,0.0,True
+2000,0.0,True
