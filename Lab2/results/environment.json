@@ -1,0 +1,32 @@
+{
+  "created_at_utc": "2026-10-16T05:57:28.428382+00:00",
+  "cpu": "arm",
+  "os": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "architecture": "arm64",
+  "logical_cpu_count": 10,
+  "compiler": "clang++",
+  "compiler_version": "Apple clang version 17.0.0 (clang-1700.6.4.2)",
+  "flags": "-O2 -std=c++17 -Wall -Wextra -Wpedantic -fopenmp",
+  "binary": "lab2",
+  "binary_sha256": "9e21982c68bde85d0bcbde2de1e0ed104f6db18d1539b5ed389bf512631768e0",
+  "sizes": [
+    200,
+    400,
+    800,
+    1200,
+    1600,
+    2000
+  ],
+  "thread_counts": [
+    1,
+    2,
+    4,
+    8,
+    10
+  ],
+  "repeats": 5,
+  "warmups_per_configuration": 1,
+  "seed": 42,
+  "verification": "NumPy A @ B, rtol=1e-9, atol=1e-9",
+  "timing_scope": "C++ OpenMP multiplication wall time, excluding file I/O and initialization"
+}

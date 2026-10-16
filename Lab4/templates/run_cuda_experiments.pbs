@@ -1,0 +1,21 @@
+#!/bin/bash
+#PBS -N matrix_cuda_lab4
+#PBS -A REPLACE_WITH_YOUR_CLUSTER_ACCOUNT
+#PBS -l walltime=01:00:00
+#PBS -l nodes=1:ppn=2:gpu
+#PBS -j oe
+
+set -euo pipefail
+cd "$PBS_O_WORKDIR"
+
+# Select a CUDA module that is present on the allocated GPU node.
+module avail cuda
+module load cuda/6.5
+make clean
+make NVCCFLAGS='-O2 -arch=sm_20'
+python3 cuda_experiments.py \
+    --binary ./matrix_cuda \
+    --sizes 200 400 800 1200 1600 2000 \
+    --tiles 4 8 16 32 \
+    --repeats 5 \
+    --output-dir results/sergey-korolev

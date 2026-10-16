@@ -1,0 +1,32 @@
+{
+  "created_at_utc": "2026-10-16T06:10:17.929526+00:00",
+  "cpu": "arm",
+  "os": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "architecture": "arm64",
+  "logical_cpu_count": 10,
+  "mpi_launcher": "mpirun --oversubscribe",
+  "mpi_version": "mpirun (Open MPI) 5.0.11",
+  "compiler": "mpicxx",
+  "compiler_flags": "-O2 -std=c++17 -Wall -Wextra -Wpedantic",
+  "binary": "lab3",
+  "binary_sha256": "5785573d41b62551564301bf015138778759152dc40c799e63ab70c2beccec57",
+  "sizes": [
+    200,
+    400,
+    800,
+    1200,
+    1600,
+    2000
+  ],
+  "process_counts": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "repeats": 5,
+  "warmups_per_configuration": 1,
+  "seed": 42,
+  "verification": "NumPy A @ B, rtol=1e-9, atol=1e-9",
+  "timing_scope": "MPI wall time including matrix distribution, multiplication and result collection"
+}

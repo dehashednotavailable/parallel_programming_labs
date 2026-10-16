@@ -1,0 +1,22 @@
+#!/bin/bash
+#PBS -N matrix_mpi_lab3
+#PBS -A REPLACE_WITH_YOUR_CLUSTER_ACCOUNT
+#PBS -l walltime=01:00:00
+#PBS -l nodes=1:ppn=8
+#PBS -j oe
+
+set -euo pipefail
+cd "$PBS_O_WORKDIR"
+
+# Follow the cluster administrator's current MPI module instructions.
+module load impi/4
+make clean
+make CXX=mpicxx
+
+python3 mpi_experiments.py \
+    --binary ./lab3 \
+    --processes 1 2 4 8 \
+    --sizes 200 400 800 1200 1600 2000 \
+    --repeats 5 \
+    --output-dir results/sergey-korolev \
+    --launcher "mpirun -r ssh -machinefile $PBS_NODEFILE"
